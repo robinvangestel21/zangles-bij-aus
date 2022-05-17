@@ -7,3 +7,5 @@ This simple static website is built with HTML and CSS. It list information about
 The website is desktop and mobile friendly.
 
 Link: http://zanglesbijaus.nl
+
+Last update: october 2021
