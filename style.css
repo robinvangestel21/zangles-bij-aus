@@ -1,579 +1,586 @@
-:root{
-    --pink: #FF968D;
-    --grey: #F1F1F1;
-    --black: #000000;
+:root {
+  --pink: #ff968d;
+  --grey: #f1f1f1;
+  --black: #000000;
 }
 
-.wrapper{
-    position: relative;
-    overflow-x: hidden;
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
 }
-body{
-    font-family: 'Mukta', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-h1, h2{
-    font-family: 'DM Serif Display', serif;
-    color: var(--pink);
-    font-style: italic;
-}
-h1, h2, h3{
-    text-transform: uppercase;
+body {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-h1{
-    font-size: 4rem;
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: var(--pink);
+  font-style: italic;
 }
-h2{
-    font-size: 3rem;
-}
-h3{
-    font-size: 1rem;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
-p{
-    line-height: 1.6;
-    color: var(--black);
+h1 {
+  font-size: 4rem;
 }
-#instagramLogo1{
-    height: 32px;
+h2 {
+  font-size: 3rem;
 }
-#instagramLogo2{
-    height: 48px;
-    margin: 50px 0 0 0;
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--black);
+}
+#instagramLogo1 {
+  height: 32px;
+}
+#instagramLogo2 {
+  height: 48px;
+  margin: 50px 0 0 0;
 }
 .instagramLogo1-1,
-.instagramLogo2-1{
-    fill: #1a1a1a;
-    transition: fill 500ms ease;
+.instagramLogo2-1 {
+  fill: #1a1a1a;
+  transition: fill 500ms ease;
 }
-#instagramLogo1:hover .instagramLogo1-1{
-    fill: var(--pink);
+#instagramLogo1:hover .instagramLogo1-1 {
+  fill: var(--pink);
 }
-#instagramLogo2:hover .instagramLogo2-1{
-    fill: var(--pink);
-}
-
-#spotifyLogo{
-    height: 32px;
-}
-.spotifyLogo-1{
-    fill: #fff;
-}
-.spotifyLogo-2{
-    fill: #1bd660;
-}
-#arrow{
-    width: 16px;
-}
-.arrow-1{
-    fill: none;
-    stroke: #000;
-    stroke-miterlimit: 10;
-    stroke-width: 1.5px;
+#instagramLogo2:hover .instagramLogo2-1 {
+  fill: var(--pink);
 }
 
-.circle{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--pink);
+#spotifyLogo {
+  height: 32px;
+}
+.spotifyLogo-1 {
+  fill: #fff;
+}
+.spotifyLogo-2 {
+  fill: #1bd660;
+}
+#arrow {
+  width: 16px;
+}
+.arrow-1 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
 }
 
-section, header{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--pink);
 }
 
-.grey-bg{
-    background-color: var(--grey);
+section,
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-header{
-    padding: 56px 0 56px 0;
-}
-header div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 960px;
-}
-header div a{
-    position: absolute;
-    transform: translate( calc(480px - 50%) , 0);
+.grey-bg {
+  background-color: var(--grey);
 }
 
-section .container{
-    width: 960px;
-    padding: 48px 0 48px 0;
+header {
+  padding: 56px 0 56px 0;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+}
+header div a {
+  position: absolute;
+  transform: translate(calc(480px - 50%), 0);
+}
+
+section .container {
+  width: 960px;
+  padding: 48px 0 48px 0;
 }
 
 .video,
-.image{
-    width: 960px;
+.image {
+  width: 960px;
 }
 
-.video{
-    margin: 0 0 50px 0;
+.video {
+  margin: 0 0 50px 0;
 }
 
 #image-profile,
-#image-profile-cropped{
-    height: 696px;
+#image-profile-cropped {
+  height: 696px;
 }
-#image-profile-cropped, #image-profile-mobile{
-    display: none;
+#image-profile-cropped,
+#image-profile-mobile {
+  display: none;
+}
+
+#image-profile-cropped {
+  object-fit: cover;
 }
 
 #image-singing,
-#image-singing-cropped{
-    height: 1000px;
+#image-singing-cropped {
+  height: 1000px;
 }
-#image-singing-cropped, #image-singing-mobile{
-    display: none;
+#image-singing-cropped,
+#image-singing-mobile {
+  display: none;
 }
 .background .container,
-.philosophy .container{
-    display: flex;
-    flex-direction: row;
+.philosophy .container {
+  display: flex;
+  flex-direction: row;
 }
 
-.background .container{
-    align-items: flex-start;
+.background .container {
+  align-items: flex-start;
 }
 
-.background p{
-    width: 640px;
-    margin: 50px 50px 50px 0;
+.background p {
+  width: 640px;
+  margin: 50px 50px 50px 0;
 }
-.philosophy p{
-    width: 640px;
-    margin: 50px 0 50px 0;
-}
-
-.philosophy div div{
-    transform: translate(320px, 0);
+.philosophy p {
+  width: 640px;
+  margin: 50px 0 50px 0;
 }
 
-.background .image-wrapper{
-    transform: translate( 690px, 100px);
-    position: absolute;
-}
-.philosophy img{
-    margin: 0 50px 0 0;
-    position: absolute;
+.philosophy div div {
+  transform: translate(320px, 0);
 }
 
-.philosophy img{
-    transform: translate(-500px, -120px);
+.background .image-wrapper {
+  transform: translate(690px, 100px);
+  position: absolute;
+}
+.philosophy img {
+  margin: 0 50px 0 0;
+  position: absolute;
 }
 
-.youtube .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 100px 0 0 0;
+.philosophy img {
+  transform: translate(-500px, -120px);
 }
 
-.youtube .container iframe{
-    width: 296px;
-    height: 166.5px;
-    margin: 0;
-}
-.youtube .container .videos-container{
-    display: flex;
-    width: 960px;
-    justify-content: space-between;
-    margin: 80px 0 234px 0;
+.youtube .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 0 0;
 }
 
-.youtube .container .videos-container h3{
-    text-align: center;
-    margin: 12px 0 0 0;
+.youtube .container iframe {
+  width: 296px;
+  height: 166.5px;
+  margin: 0;
+}
+.youtube .container .videos-container {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  margin: 80px 0 234px 0;
 }
 
-.pricing .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0 100px 0;
+.youtube .container .videos-container h3 {
+  text-align: center;
+  margin: 12px 0 0 0;
 }
 
-.pricing .container h2{
-    letter-spacing: 0.3rem;
-    margin: 35px 0 35px 0;
-    text-align: center;
-}
-.pricing .container h2.mobile{
-    display: none;
+.pricing .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 100px 0;
 }
 
-.pricing .container p{
-    text-align: center;
-    margin: 35px 0 0 0;
+.pricing .container h2 {
+  letter-spacing: 0.3rem;
+  margin: 35px 0 35px 0;
+  text-align: center;
+}
+.pricing .container h2.mobile {
+  display: none;
 }
 
-.image{
-    margin: -400px 0 0px 0;
+.pricing .container p {
+  text-align: center;
+  margin: 35px 0 0 0;
 }
 
-.contact .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0 0 0;
+.image {
+  margin: -400px 0 0px 0;
 }
 
-.contact .container p{
-    margin: 50px 0 0 0;
-    text-align: center;
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 0 0;
 }
-.contact .container a.mail{
-    margin: 20px 0 450px 0;
-    color: var(--black);
-    text-decoration: none;
-    position: relative;
+
+.contact .container p {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.contact .container a.mail {
+  margin: 20px 0 450px 0;
+  color: var(--black);
+  text-decoration: none;
+  position: relative;
 }
 
 .contact .container a.mail::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background-color: var(--black);
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 
 .contact .container a.mail:hover::after,
 .contact .container a.mail:focus::after {
-	opacity: 1;
-	transform: translate3d(0, 2px, 0);
+  opacity: 1;
+  transform: translate3d(0, 2px, 0);
 }
 
-
-.spotify-container{
-    display: flex;
-    height: 40px;
-    align-items: center;
+.spotify-container {
+  display: flex;
+  height: 40px;
+  align-items: center;
 }
-.spotify-container{
-    color: var(--black);
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    width: 330px;
+.spotify-container {
+  color: var(--black);
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  width: 330px;
 }
-.spotify-container span{
-    margin: 0 13px 0 10px;
+.spotify-container span {
+  margin: 0 13px 0 10px;
 }
 .spotify-container::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background-color: var(--black);
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 
 .spotify-container:hover::after,
 .spotify-container:focus::after {
-	opacity: 1;
-	transform: translate3d(0, 2px, 0);
+  opacity: 1;
+  transform: translate3d(0, 2px, 0);
 }
 @media only screen and (max-width: 1464px) {
-    
 }
 @media only screen and (max-width: 1300px) {
-    .philosophy{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    #image-singing{
-        display: none;
-    }
-    #image-singing-cropped{
-        display: block;
-    }
-    .philosophy img{
-        transform: translate(0,-120px);
-        left: 0;
-    }
-    .philosophy div div{
-        transform: translate(0, 0);
-        position: relative;
-        left: calc(462px - (100vw - 960px) / 2);
-    }
-    .philosophy p, .philosophy h2{
-        width: calc(960px - 50px - (412px - (100vw - 960px) / 2));
-    }
+  .philosophy {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #image-singing {
+    display: none;
+  }
+  #image-singing-cropped {
+    display: block;
+  }
+  .philosophy img {
+    transform: translate(0, -120px);
+    left: 0;
+  }
+  .philosophy div div {
+    transform: translate(0, 0);
+    position: relative;
+    left: calc(462px - (100vw - 960px) / 2);
+  }
+  .philosophy p,
+  .philosophy h2 {
+    width: calc(960px - 50px - (412px - (100vw - 960px) / 2));
+  }
 }
 
 @media only screen and (max-width: 1040px) {
-    header{
-        padding: 56px 40px 56px 40px;
-    }
-    header div a{
-        position: absolute;
-        transform: translate( 0, 0);
-        right: 40px;
-    }
-    section{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .video{
-        width: calc(100vw - 80px);
-    }
-    .background p{
-        width: calc(100vw - 50px - 406px - 40px);
-    }
-    #image-profile{
-        display: none;
-    }
-    #image-profile-cropped{
-        display: block;
-        width: 406px;
-    }
-    .background .image-wrapper{
-        transform: translate(0, 100px);
-        right: 0;
-    }
-    .youtube .container .videos-container {
-        padding: 0 40px 0 40px;
-    }
-    .youtube .container{
-        margin: 100px 0 100px 0;
-        width: 100vw;
-        align-items: center;
-    }
-    .youtube .container .videos-container{
-        width: 100%;
-        padding: 0;
-        margin: 32px 0 0 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .youtube .container iframe {
-        width: 500px;
-        height: calc(500px /1920 *1080);
-        margin: 0;
-    }
-    .videos-container div{
-        margin: 0 0 40px 0;
-    }
+  header {
+    padding: 56px 40px 56px 40px;
+  }
+  header div a {
+    position: absolute;
+    transform: translate(0, 0);
+    right: 40px;
+  }
+  section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .video {
+    width: calc(100vw - 80px);
+  }
+  .background p {
+    width: calc(100vw - 50px - 406px - 40px);
+  }
+  #image-profile {
+    display: none;
+  }
+  #image-profile-cropped {
+    display: block;
+    width: 406px;
+  }
+  .background .image-wrapper {
+    transform: translate(0, 100px);
+    right: 0;
+  }
+  .youtube .container .videos-container {
+    padding: 0 40px 0 40px;
+  }
+  .youtube .container {
+    margin: 100px 0 100px 0;
+    width: 100vw;
+    align-items: center;
+  }
+  .youtube .container .videos-container {
+    width: 100%;
+    padding: 0;
+    margin: 32px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .youtube .container iframe {
+    width: 500px;
+    height: calc(500px / 1920 * 1080);
+    margin: 0;
+  }
+  .videos-container div {
+    margin: 0 0 40px 0;
+  }
 
-    .philosophy div div{
-        transform: translate(0, 0);
-        position: relative;
-        left: 412px;
-    }
-    .philosophy p, .philosophy h2{
-        width: calc(100vw - 502px);
-    }
-    
-
+  .philosophy div div {
+    transform: translate(0, 0);
+    position: relative;
+    left: 412px;
+  }
+  .philosophy p,
+  .philosophy h2 {
+    width: calc(100vw - 502px);
+  }
 }
 
 @media only screen and (max-width: 1025px) {
-    .philosophy .container{
-        flex-direction: column-reverse;
-    }
-    .philosophy div div{
-        transform: translate(0, 0);
-    }
-    .philosophy p{
-        width: auto;
-        margin: 26px 0 50px 0;
-    }
-    .philosophy h2{
-        width: auto;
-    }
-    .philosophy img{
-        position: initial;
-    }
-    #image-singing, #image-singing-mobile{
-        display: block;
-        transform: translate(0, 0);
-        margin: 0 5px 0 5px;
-        height: auto;
-    }
-    #image-singing-cropped, #image-singing-mobile{
-        display: none;
-    }
-    .image{
-        height: auto;
-        object-fit: contain;
-    }
-    .philosophy div div{
-        left: 0;
-    }
-    .contact .container{
-        margin: 0 0 0 0 ;
-    }
-
+  .philosophy .container {
+    flex-direction: column-reverse;
+  }
+  .philosophy div div {
+    transform: translate(0, 0);
+  }
+  .philosophy p {
+    width: auto;
+    margin: 26px 0 50px 0;
+  }
+  .philosophy h2 {
+    width: auto;
+  }
+  .philosophy img {
+    position: initial;
+  }
+  #image-singing,
+  #image-singing-mobile {
+    display: block;
+    transform: translate(0, 0);
+    margin: 0 5px 0 5px;
+    height: auto;
+  }
+  #image-singing-cropped,
+  #image-singing-mobile {
+    display: none;
+  }
+  .image {
+    height: auto;
+    object-fit: contain;
+  }
+  .philosophy div div {
+    left: 0;
+  }
+  .contact .container {
+    margin: 0 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 875px) {
+  .background .container {
+    padding: 0 0 0 0;
+    flex-direction: column;
+    margin: 0 0 -50px 0;
+  }
+  .background p {
+    margin: 26px 0 0 0;
+    width: calc(100vw - 80px);
+  }
+  .background .image-wrapper {
+    position: initial;
+    transform: translate(0, 0);
+  }
+  #image-profile {
+    display: block;
+    padding: 0 5px 0 5px;
+    height: auto;
+  }
+  #image-profile-cropped {
+    display: none;
+  }
 
-    .background .container{
-        padding: 0 0 0 0;
-        flex-direction: column;
-        margin: 0 0 -50px 0;
-    }
-    .background p{
-        margin: 26px 0 0 0;
-        width: calc(100vw - 80px);
-    }
-    .background .image-wrapper{
-        position:initial;
-        transform: translate(0,0);
-    }
-    #image-profile{
-        display: block;
-        padding: 0 5px 0 5px;
-        height: auto;
-    }
-    #image-profile-cropped{
-        display: none;
-    }
-
-    .spotify-container{
-        margin: 42px auto 42px auto;
-    }
-
+  .spotify-container {
+    margin: 42px auto 42px auto;
+  }
 }
 @media only screen and (max-width: 920px) {
-    .pricing .container h2.mobile{
-        display: block;
-    }
-    .pricing .container h2.desktop{
-        display: none;
-    }
+  .pricing .container h2.mobile {
+    display: block;
+  }
+  .pricing .container h2.desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    header div a{
-        display: none;
-    }
-    section{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    section, header{
-        justify-content: flex-start;
-    }
-    .video{
-        width: calc(100vw - 30px);
-    }
+  header div a {
+    display: none;
+  }
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section,
+  header {
+    justify-content: flex-start;
+  }
+  .video {
+    width: calc(100vw - 30px);
+  }
 
-    .background .container{
-        width: 100%;
-    }
-    .background p, .background h2{
-        width: 100%;
-    }
-    .text-wrapper{
-        width: 100%;
-    }
-    header{
-        padding: 15px 15px 24px 15px;
-    }
-    h1{
-        font-size: 12.5vw;
-    }
-    h2{
-        font-size: 2.5rem;
-    }
-    h3{
-        font-size: 1.2rem;
-    }
-    
-    #image-profile-mobile{
-        display: block;
-    }
-    #image-profile{
-        display: none;
-    }
-    #image-singing-mobile{
-        display: block;
-    }
-    #image-singing{
-        display: none;
-    }
-    
-    .youtube .container .videos-container {
-        padding: 0 40px 0 40px;
-    }
-    .youtube .container{
-        margin: 80px 0 0 0;
-        width: 100vw;
-        align-items: flex-start;
-    }
-    .youtube .container .videos-container{
-        width: 100%;
-        padding: 0;
-        margin: 32px 0 0 0;
-        flex-wrap: wrap;
-    }
-    .youtube .container iframe {
-        width: calc(100vw - 30px);
-        height: calc((100vw - 30px) /1920 *1080);
-        margin: 0;
-    }
-    .videos-container div{
-        margin: 0 0 40px 0;
-    }
-    
+  .background .container {
+    width: 100%;
+  }
+  .background p,
+  .background h2 {
+    width: 100%;
+  }
+  .text-wrapper {
+    width: 100%;
+  }
+  header {
+    padding: 15px 15px 24px 15px;
+  }
+  h1 {
+    font-size: 12.5vw;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 
-    .philosophy{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .pricing .container{
-        padding: 0;
-    }
-    .pricing .container h2{
-        margin: 25px 0 25px 0;
-    }
-    
-    .pricing .container p{
-        margin: 25px 0 0 0;
-    }
-    .image{
-        margin: -200px 0 0 0;
-    }
-    .contact .container{
-        margin: 50px 0 26px 0;
-        padding: 0;
-    }
-    .contact .container p{
-        margin: 25px 0 0 0;
-    }
-    .contact .container a.mail {
-        margin: 15px 0 250px 0;
-    }
+  #image-profile-mobile {
+    display: block;
+  }
+  #image-profile {
+    display: none;
+  }
+  #image-singing-mobile {
+    display: block;
+  }
+  #image-singing {
+    display: none;
+  }
+
+  .youtube .container .videos-container {
+    padding: 0 40px 0 40px;
+  }
+  .youtube .container {
+    margin: 80px 0 0 0;
+    width: 100vw;
+    align-items: flex-start;
+  }
+  .youtube .container .videos-container {
+    width: 100%;
+    padding: 0;
+    margin: 32px 0 0 0;
+    flex-wrap: wrap;
+  }
+  .youtube .container iframe {
+    width: calc(100vw - 30px);
+    height: calc((100vw - 30px) / 1920 * 1080);
+    margin: 0;
+  }
+  .videos-container div {
+    margin: 0 0 40px 0;
+  }
+
+  .philosophy {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pricing .container {
+    padding: 0;
+  }
+  .pricing .container h2 {
+    margin: 25px 0 25px 0;
+  }
+
+  .pricing .container p {
+    margin: 25px 0 0 0;
+  }
+  .image {
+    margin: -200px 0 0 0;
+  }
+  .contact .container {
+    margin: 50px 0 26px 0;
+    padding: 0;
+  }
+  .contact .container p {
+    margin: 25px 0 0 0;
+  }
+  .contact .container a.mail {
+    margin: 15px 0 250px 0;
+  }
 }
 @media only screen and (max-width: 480px) {
-    h1{
-        font-size: 12vw;
-    }
+  h1 {
+    font-size: 12vw;
+  }
 }
 @media only screen and (max-width: 362px) {
-    .spotify-container{
-        transform: scale(0.9);
-        width: 100%;
-        font-size: 1.3rem;
-        justify-content: space-between;
-    }
-
+  .spotify-container {
+    transform: scale(0.9);
+    width: 100%;
+    font-size: 1.3rem;
+    justify-content: space-between;
+  }
 }
